@@ -1,2 +1,3 @@
-**Lab Reports**
-]Lab 1 Report
+Lab Reports
+=============
+[https://rnguerrero.github.io/cse15l-lab-reports/LabReport1]Lab_Report_1
