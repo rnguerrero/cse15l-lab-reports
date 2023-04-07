@@ -14,7 +14,32 @@ After everything is downloaded, you should be able to open VSC. It should look s
 
 ![VSC Home Screen](https://github.com/rnguerrero/cse15l-lab-reports/blob/4414eb22c22f04d05be6774dad96f80a70bcd3d9/VSCode%20Downloaded.png)
 
-An  
+Another thing to be downloaded is Git for windows. If you haven't already download it here:
+
+[Git Download](https://gitforwindows.org/)
+
+After all this, we're ready for the next step
+
+**2) Remotely Connecting to ieng6**
+
+Next, open a terminal on VSC. On the top right of the terminal, there is a `+` sign, with a dropdown option. You have to click on the dropdown that reads `Git Bash (Default)`.
+
+Then, use `ssh` in  the bash terminal. It will like this, (This one is mine, if attempting to access another student account, replace the `fx` with the two letters corresponding to your account).
+
+`$ ssh cs15lsp23fx@ieng6.ucsd.edu`
+
+After pressing enter, a new line will be presented. It looks like this:
+
+`(cs15lsp23fx@ieng6.ucsd.edu) Password:`
+
+Here, you must blindly type in the password that corresponds to that account. (You will see below that I didn't take to this well with the amount of failed password attempts)
+
+After succsesfully doing so, you will see something like this:
 
 ![GettingLoggedIn](https://rnguerrero.github.io/cse15l-lab-reports/GettingLoggedIn.png)
-`
+
+If you do, then congratulations! You logged into your account on `ieng6`
+
+**3) Trying Out Some Commands**
+
+[]
