@@ -12,7 +12,9 @@ This step is easy enough. If you're working on your main computing device, the o
 
 After everything is downloaded, you should be able to open VSC. It should look something like this :
 
-![VSC Home Screen]()
+![VSC Home Screen](https://github.com/rnguerrero/cse15l-lab-reports/blob/4414eb22c22f04d05be6774dad96f80a70bcd3d9/VSCode%20Downloaded.png)
+
+An  
 
 ![GettingLoggedIn](https://rnguerrero.github.io/cse15l-lab-reports/GettingLoggedIn.png)
 `
