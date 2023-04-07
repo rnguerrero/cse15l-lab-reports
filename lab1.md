@@ -12,7 +12,7 @@ This step is easy enough. If you're working on your main computing device, the o
 
 After everything is downloaded, you should be able to open VSC. It should look something like this :
 
-![VSC Home Screen](https://github.com/rnguerrero/cse15l-lab-reports/blob/4414eb22c22f04d05be6774dad96f80a70bcd3d9/VSCode%20Downloaded.png)
+![VSC Home Screen](https://github.com/rnguerrero/cse15l-lab-reports/blob/main/VSCode%20Downloaded.png)
 
 Another thing to be downloaded is Git for windows. If you haven't already download it here:
 
@@ -56,4 +56,4 @@ General guide of commands from this week's notes:
 
 Below are some implementations of the above commands. Feel free to expand further on what is seen:
 
-![Trying Out Commands](https://github.com/rnguerrero/cse15l-lab-reports/blob/e100f227fcdae923f1ec65d9c9d6b3994760a2f4/ExperimentingWithieng6.png)
+![Trying Out Commands](https://github.com/rnguerrero/cse15l-lab-reports/blob/main/ExperimentingWithieng6.png)
