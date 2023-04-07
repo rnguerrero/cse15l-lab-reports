@@ -1,6 +1,6 @@
 Lab Report 1
 =
-April 10th, 2023
+April 10th, 2023 
 -
 
 Hello all of you 15L students (probably just me), this is going to be a guide on how to log into a course-specific account on `ieng6`.
