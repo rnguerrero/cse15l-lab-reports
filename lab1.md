@@ -42,4 +42,18 @@ If you do, then congratulations! You logged into your account on `ieng6`
 
 **3) Trying Out Some Commands**
 
-[]
+Now, you are free to play around in the terminal and see what there is to do!
+
+General guide of commands from this week's notes:
+
+- `cat <path>` : Prints the content of one or more files. 
+  
+- `ls <path>` : Lists out all files / folders in the path.
+  
+- `pwd` : Prints the current working directory, or where you are currently working.
+  
+- `cd <path>` : Changes the current working directory, or where you are currently working.
+
+Below are some implementations of the above commands. Feel free to expand further on what is seen:
+
+![Trying Out Commands](https://github.com/rnguerrero/cse15l-lab-reports/blob/e100f227fcdae923f1ec65d9c9d6b3994760a2f4/ExperimentingWithieng6.png)
