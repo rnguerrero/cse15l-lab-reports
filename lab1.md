@@ -57,4 +57,3 @@ General guide of commands from this week's notes:
 Below are some implementations of the above commands. Feel free to expand further on what is seen:
 
 ![Trying Out Commands](https://rnguerrero.github.io/cse15l-lab-reports/ExperimentingWithieng6.png)
-why not working????
