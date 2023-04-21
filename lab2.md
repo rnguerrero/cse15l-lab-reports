@@ -74,17 +74,25 @@ The default page looks like this :
 
 ![serverDefault](https://rnguerrero.github.io/cse15l-lab-reports/Lab3%20Pics/serverDefault.png)
 
+Nothing appears, but the site is technichally showing an empty string, called `stringOnSite`. This is important for adding messages.
+
 After making the path `/add-message?s=Hello` :
 
 ![serverDefault](https://rnguerrero.github.io/cse15l-lab-reports/Lab3%20Pics/serverHello.png)
 
 The only method called `handleRequest`, where the input was the URL that I just entered. Within this method, it checks if the path is `add-message`. After doing so, it 
-checks again if the first first element of the query is `s`. If both of these conditions are met, it adds the string that you inputed after the `=` followed by `/n` so 
+checks again if the first first element of the query is `s`. If both of these conditions are met, it adds the string that you inputed after the `=` followed by `/n` to
+`stringsOnSite`, so
 that the next string inputed using this path and query will be on a new line.
+Finally, it returns `stringsOnSite`, so the page displays all prior messages along with the added message on a new line.
 
 This can be seen after making the path `/add-message?s=How are you`
 
 ![serverDefault](https://rnguerrero.github.io/cse15l-lab-reports/Lab3%20Pics/serverHowAreYou.png)
+
+Again, the `handleRequest` method is called, undergoing the same process as before, but instead adding `How are you` instead of `Hello` to `stringsOnSite
+
+It is important to note that if either the path does not contain `add-message` or if the query to the left of the `=` sign is exactly `s`, the message `404 What the heck???` will be displayed, so when using the program, you must make sure that 
 
 ---
 Part 2 - Testing from Lab 3
