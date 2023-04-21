@@ -1,17 +1,77 @@
 Lab Report 2 - Servers and Bugs - April 24, 2023
 ================================================
+Intro
+---
+
+I don't know why, other than seeing how blockquote looks, but I felt possessed to put the following quote:
+
+> Father. It's me, Michael. I did it. I found it. It was right where you said it would be. They were all there. They didn't recognize me at first but then they thought I was you. And I found her. I put her back together, just like you asked me to. She's free now. But something is wrong with me. I should be dead. But I'm not. I've been living in shadows. There is only one thing left for me to do now. I'm going to come find you... I'm going to come find you.
+
+> -- William Afton
+
+Other than that, I hope whoever is reading this has a good day :) 👍
+
 ---
 Part 1 - StringServer Website
 ---
 
 I created code that I have reasonable confidence in, but I am unable to run it, as when I launch it as a server,  the server itself functions as the NumberServer
-we worked on during lab 2. I posted a problem about this on edstem, it is number #107. If this is still here upon submission, I have yet to figure out the issue
+we worked on during lab 2. I posted a problem about this on edstem, it is number #107. If this is still the only thing on here for part 1 upon submission, I have yet to figure out the issue
 I am having.
+Edit: I figured how it works :) : I had to make the class name `Handler`. I suppose it has something to do with how URLHandler works. Since another java file used `Handler` as a class name in the repository, it used that file's server operations as opposed to `StringServer`'s
+
+For this lab report's first assignment, I created a program called StringServer, that creates a local server. When the path reads `add-message`, the following query, which I decided to label as `string`, will be shown on the website. Additionally, for every additional string added using this path, the newly added string will appear on a new line, along every other string that I inputed using this method.
+
+This is my code:
+
+    >StringServer.java
+    
+    import java.io.IOException;
+    import java.net.URI;
+
+    class Handler implements URLHandler {
+        String stringsOnSite = "";
+
+        public String handleRequest(URI url) {
+            if (url.getPath().equals("/")) {
+                return stringsOnSite;
+            } 
+            else {
+                if (url.getPath().contains("/add-message")) {
+                    String[] parameters = url.getQuery().split("=");
+                    if (parameters[0].equals("string")) {
+                        return stringsOnSite += parameters[1] + "\n";
+                    }
+                }
+                return "404 What the heck???";
+            }
+        }
+    }
+
+    class StringServer {
+        public static void main(String[] args) throws IOException {
+            if(args.length == 0){
+                System.out.println("Must put port number, you fool");
+                return;
+            }
+
+            int port = Integer.parseInt(args[0]);
+
+            Server.start(port, new Handler());
+        }
+    }
+    
+When I start a port for this program, the terminal looks as follows:
+
+![TerminalOfServerProgram](
+
 
 ---
 Part 2 - Testing from Lab 3
 ---
-s
+
+Next, we were tasked with selecting a bug we observed with one of the methods in 
+
 The buggy method I want to cover for this lab report is the `reversed` method in `ArrayExamples`.
 
 One failure inducing input that I found was:
