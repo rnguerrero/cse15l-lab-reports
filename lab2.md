@@ -28,14 +28,23 @@ One non-failure inducing input that I found was:
     @Test
     public void testReversed00000() {
       int[] input1 = {0, 0, 0, 0, 0};
-      ArrayExamples.reversed(input1);
-      assertArrayEquals(new int[]{0, 0, 0, 0, 0}, input1);
+      assertArrayEquals(new int[]{0, 0, 0, 0, 0}, ArrayExamples.reversed(input1));
     
     }
     
     
 The symptom of the failure inducing input is shown by the output after running jUnit:
  
-![Both tests after running](https://github.com/rnguerrero/cse15l-lab-reports/blob/94bf2eca78b9b0103e982b97f76f1ca5f854ee3e/Lab3%20Pics/12341234.png)
+![Both tests after running](https://rnguerrero.github.io/cse15l-lab-reports/Lab3%20Pics/12341234.png)
   
+  
+This is how the `reversed` method looked like before I made the bug fixes:
+
+![Code before](https://github.com/rnguerrero/cse15l-lab-reports/blob/94bf2eca78b9b0103e982b97f76f1ca5f854ee3e/Lab3%20Pics/codeBeforeFixReverse.png)
+
+And this is how it looks after I made the bug fixes:
+
+![Code after]()
+
+The change I made was changing the array that is being changed from `arr`, which is the array that represents the argument for the method, to `newArray`, which is the blank array that I 
   
