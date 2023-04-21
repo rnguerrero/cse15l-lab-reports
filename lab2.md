@@ -40,11 +40,24 @@ The symptom of the failure inducing input is shown by the output after running j
   
 This is how the `reversed` method looked like before I made the bug fixes:
 
-![Code before](https://github.com/rnguerrero/cse15l-lab-reports/blob/94bf2eca78b9b0103e982b97f76f1ca5f854ee3e/Lab3%20Pics/codeBeforeFixReverse.png)
+    static int[] reversed(int[] arr) {
+        int[] newArray = new int[arr.length];
+        for(int i = 0; i < arr.length; i += 1) {
+            arr[i] = newArray[arr.length - i - 1];
+        }
+        return arr;
 
 And this is how it looks after I made the bug fixes:
 
-![Code after]()
+    static int[] reversed(int[] arr) {
+        int[] newArray = new int[arr.length];
+        for(int i = 0; i < arr.length; i += 1) {
+            newArray[i] = arr[arr.length - i - 1];
+        }
+        return newArray;
 
-The change I made was changing the array that is being changed from `arr`, which is the array that represents the argument for the method, to `newArray`, which is the blank array that I 
+The change I made was changing the array that is being changed from `arr`, which is the array that represents the argument for the method, to `newArray`, which is the blank array that was created within the method. This change does two things: 
+
+- Changes the newly created array (`newArray`) instead of the arry in the argument (`arr`) 
+- Copies the elements of `arr` to `newArray`, which is the array that is returned.
   
