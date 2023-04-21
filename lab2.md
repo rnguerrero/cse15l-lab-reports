@@ -16,11 +16,16 @@ Part 1 - StringServer Website
 ---
 
 I created code that I have reasonable confidence in, but I am unable to run it, as when I launch it as a server,  the server itself functions as the NumberServer
-we worked on during lab 2. I posted a problem about this on edstem, it is number #107. If this is still the only thing on here for part 1 upon submission, I have yet to figure out the issue
-I am having.
-Edit: I figured how it works :) : I had to make the class name `Handler`. I suppose it has something to do with how URLHandler works. Since another java file used `Handler` as a class name in the repository, it used that file's server operations as opposed to `StringServer`'s
+we worked on during lab 2. I posted a problem about this on edstem, it is number #107. If this is still the only thing on here for part 1 upon submission, I have yet to 
+figure out the issue I am having.
 
-For this lab report's first assignment, I created a program called StringServer, that creates a local server. When the path reads `add-message`, the following query, which I decided to label as `string`, will be shown on the website. Additionally, for every additional string added using this path, the newly added string will appear on a new line, along every other string that I inputed using this method.
+Edit: I figured how it works :) : I had to make the class name `Handler`. I suppose it has something to do with how URLHandler works. Since another java file used 
+`Handler` as a class name in the repository, it used that file's server operations as opposed to `StringServer`'s
+
+
+For this lab report's first assignment, I created a program called StringServer, that creates a local server. When the path reads `add-message`, the following query, 
+which was labeled `s`, will be shown on the website. Additionally, for every additional string added using this path, the newly added string will appear on a new line, 
+along every other string that I inputed using this method.
 
 This is my code:
 
@@ -63,8 +68,23 @@ This is my code:
     
 When I start a port for this program, the terminal looks as follows:
 
-![TerminalOfServerProgram](
+![TerminalOfServerProgram](https://rnguerrero.github.io/cse15l-lab-reports/Lab3%20Pics/terminalServer.png)
 
+The default page looks like this : 
+
+![serverDefault](https://rnguerrero.github.io/cse15l-lab-reports/Lab3%20Pics/serverDefault.png)
+
+After making the path `/add-message?s=Hello` :
+
+![serverDefault](https://rnguerrero.github.io/cse15l-lab-reports/Lab3%20Pics/serverHello.png)
+
+The only method called `handleRequest`, where the input was the URL that I just entered. Within this method, it checks if the path is `add-message`. After doing so, it 
+checks again if the first first element of the query is `s`. If both of these conditions are met, it adds the string that you inputed after the `=` followed by `/n` so 
+that the next string inputed using this path and query will be on a new line.
+
+This can be seen after making the path `/add-message?s=How are you`
+
+![serverDefault](https://rnguerrero.github.io/cse15l-lab-reports/Lab3%20Pics/serverHowAreYou.png)
 
 ---
 Part 2 - Testing from Lab 3
@@ -132,4 +152,9 @@ All-in-all, this change goes from making the output all `0`s, to `arr` in revers
 Part 3 - What I've learned
 ---
 
-To cap off this lab report, I feel like I've learned a lot during these past two weeks. I suppose the most valuable thing I learned was about the nature of jUnit. I have heard of it, and continue to interact with it due to its prominence in CSE12, but we never got answers as to how it worked, leaving me with questions such as 'Why is it so different from checkExpect, which we used in cse 8B?', 'Why do we use eclipse for our programing assignments instead of VSC,' and 'Why are the PAs so differently formated?', but thanks to the recent lecture and labs, I now understand better the nature of jUnit as an external library, or a library that is not from a java library, so actually executing the tests in VSC is a lot more complex. So, we use eclipse since it is a lot more compatable with external libraries as a whole, including jUnit
+To cap off this lab report, I feel like I've learned a lot during these past two weeks. I suppose the most valuable thing I learned was about the nature of jUnit. I 
+have heard of it, and continue to interact with it due to its prominence in CSE12, but we never got answers as to how it worked, leaving me with questions such as 'Why 
+is it so different from checkExpect, which we used in cse 8B?', 'Why do we use eclipse for our programing assignments instead of VSC,' and 'Why are the PAs so 
+differently formated?', but thanks to the recent lecture and labs, I now understand better the nature of jUnit as an external library, or a library that is not from a 
+java library, so actually executing the tests in VSC is a lot more complex. So, we use eclipse since it is a lot more compatable with external libraries as a whole, 
+including jUnit
