@@ -3,6 +3,8 @@ Lab Report 2 - Servers and Bugs - April 24, 2023
 Intro
 ---
 
+Hello! This is the 2nd lab report for CSE 15L, which covered primarily local servers and testing with jUnit
+
 I don't know why, other than seeing how blockquote looks, but I felt possessed to put the following quote:
 
 > Father. It's me, Michael. I did it. I found it. It was right where you said it would be. They were all there. They didn't recognize me at first but then they thought I was you. And I found her. I put her back together, just like you asked me to. She's free now. But something is wrong with me. I should be dead. But I'm not. I've been living in shadows. There is only one thing left for me to do now. I'm going to come find you... I'm going to come find you.
