@@ -15,7 +15,8 @@ On its own, the grep command has a simple use. Its function is to print all the 
 
 And got the following output :
 
-`        based on studies undertaken during outbreaks of the
+`        
+         based on studies undertaken during outbreaks of the
 
         observed in outbreak settings. Large outbreaks have been
         
