@@ -128,4 +128,4 @@ Conclusion
 
 All-in-all, the `grep` command is only so powerful on its own, but in conjunction with specific options and combinations of options, such as `-i`. `-c`, and `-r`, only dramatically improve the utility of the `grep` command. 
 
-All options were found on [this](https://geekflare.com/grep-command-examples/#:~:text=16%20grep%20Command%20Examples%20to%20Help%20You%20in,...%208%20Limit%20grep%20Output%20...%20More%20items)	this website
+All options were found on [this](https://geekflare.com/grep-command-examples/#:~:text=16%20grep%20Command%20Examples%20to%20Help%20You%20in,...%208%20Limit%20grep%20Output%20...%20More%20items) website
