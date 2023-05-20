@@ -92,7 +92,7 @@ This can be seen after making the path `/add-message?s=How are you`
 
 ![serverDefault](https://rnguerrero.github.io/cse15l-lab-reports/Lab3%20Pics/serverHowAreYou.png)
 
-Again, the `handleRequest` method is called, undergoing the same process as before, but instead adding `How are you` instead of `Hello` to `stringsOnSite
+Again, the `handleRequest` method is called, undergoing the same process as before, but instead adding `How are you` instead of `Hello` to `stringsOnSite`
 
 It is important to note that if either the path does not contain `add-message` or if the query to the left of the `=` sign is exactly `s`, the message `404 What the heck???` will be displayed, so when using the program, you must make sure that 
 
