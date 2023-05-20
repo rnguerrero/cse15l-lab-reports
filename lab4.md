@@ -10,7 +10,7 @@ For clarity, everything that I type in the terminal will be in inline code, and 
 
 In the terminal, I did the following inputs consecutively: `ssh cs15lsp23fx@ucsd.edu <enter>`, and then I entered my password, which I will not write out for this lab, and then I pressed `<enter>`
 
-![Step1Image]()
+![Step1Image](https://github.com/rnguerrero/cse15l-lab-reports/blob/ffba02b7eb2f9bc2ed003eec38f69dd14609013a/LabReport%204%20pictures/ieng6Login.png)
 
 2 . Clone your fork of the repository from your Github account
 ---
