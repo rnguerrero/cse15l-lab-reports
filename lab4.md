@@ -28,15 +28,27 @@ Within the lab7 repository, there is a bash file called test.sh which runs the j
 
 4 . Edit the code file to fix the failing test
 ---
-Here, we will use vim to change the java file ListExamples.java so that there are no errors. To do so, I press the following keys: `vim ListE <Tab> .java <enter>` Here, I pressed tab in an attempt to auto complete the file name, but since I ran the java file, there was also a .class file, so I had to manually type .j and <tab> to ensure that I got to the right file. I then press 
+Here, we will use vim to change the java file ListExamples.java so that there are no errors. To do so, I press the following keys: `vim ListE <Tab> .java <enter>` Here, I pressed tab in an attempt to auto complete the file name, but since I ran the java file, there was also a .class file, so I had to manually type .j and <tab> to ensure that I got to the right file.
+I then press `:44 <enter>`, which brings me to the line in the file that has the bug. I then press `e x i 2`. What this does is move to the end of the current word, which happens to be the variable that is causing the bugs, removes the character that the cursor is currently on, enters insert mode, and inserts the character 2, which will fix the bugs. Finally, I press `<esc> :wq`, which allows me to enter normal mode and save the changes I made.
 
 ![Step4Image]()
 
-5 . Run the tests, demonstrating that they now succeed
+5 . Run the tests, demonstrating that they now succeed 
 ---
+At this step, I simply press the keys `<up> <up> <enter>` since I had run the test.sh file before the vim command. It shows now that the tests passed.
 
 ![Step5Image]()
 
 6 . Commit and push the resulting change to your Github account
 ---
+Finally, to commit the file, I typed `git add ListE <tab> .j <tab> <enter>`, which lets git know that when I commit, I only want to make changes to ListExamples.java. Afterwards, I typed `git commit`, which launched vim, prompting me for a commit message. For this message, I chose to type `fixed ListExamples.java bugs`
+
+![Step6Image]()
+  
+  Finally, we are done. These are all of the inputs I needed to do to accomplish this task.  
+
+  
+  
+  
+  
 
