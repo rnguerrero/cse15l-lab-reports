@@ -41,12 +41,12 @@ At this step, I simply press the keys `<up> <up> <enter>` since I had run the te
 
 6 . Commit and push the resulting change to your Github account
 ---
-Finally, to commit the file, I typed `git add ListE <tab> .j <tab> <enter>`, which lets git know that when I commit, I only want to make changes to ListExamples.java. Afterwards, I typed `git commit`, which launched vim, prompting me for a commit message. For this message, I chose to type `fixed ListExamples.java bugs`
+Finally, to commit the file, I typed `git add ListE <tab> .j <tab> <enter>`, which lets git know that when I commit, I only want to make changes to ListExamples.java. Afterwards, I typed `git commit`, which launched vim, prompting me for a commit message. For this message, I chose to type `fixed ListExamples.java bugs`, and I finally typed `<esc> :wq <enter>` to actually commit the changes.
 
 ![Step6Image]()
   
-  Finally, we are done. These are all of the inputs I needed to do to accomplish this task.  
-
+Finally, we are done. These are all of the consecutive inputs I needed to do to accomplish this task : 
+`ssh cs15lsp23fx@ucsd.edu <enter> [Typed password] <enter> git clone https://github.com/rnguerrero/lab7.git cd lab7 bash test.ssh <enter> vim ListE <Tab> .java <enter> :44 <enter> e x i 2 <esc> :wq <up> <up> <enter> git add ListE <tab> .j <tab> <enter> git commit fixed ListExamples.java bugs <esc> :wq <enter>`
   
   
   
