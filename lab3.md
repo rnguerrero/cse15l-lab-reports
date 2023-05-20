@@ -123,9 +123,21 @@ We would first do the command `$ grep -i -r "Nitro" biomed/ > NitroCount.txt`, w
 
 The `-r` option is very useful, as it allows for the use of `grep` over the span of many different files at the same time. It also comes with the added utility of telling the user which file each line is from.
 
+The -v option
+---
+The final grep option I will cover is the -v option. Now, lets say we want to find the amounf lines in the file `government/Post_Rate_Comm/Cohenetal_comparison.txt` contains the letter a. We already have the tools to do so, so we would simply have to run the following command : `$grep -i -c a government/Post_Rate_Comm/Cohenetal_comparison.txt`, which produces the output:
+                
+        663
+
+That was easy enough, but what if you want to find the amount of lines in this file that do NOT contain the letter a? Luckily, `grep` has the built in option `-v`. If we run the command again, just with the additional option of `-v`, which now looks like `$grep -i -c a government/Post_Rate_Comm/Cohenetal_comparison.txt`, the output will be: 
+
+        190
+        
+The `-v` option is for searching for all of the lines that do not contain a specific query. This is relatively niche, but it has its uses and generally makes the task of searching for what lines do not contain a query a lot easier.
+
 Conclusion
 ---
 
-All-in-all, the `grep` command is only so powerful on its own, but in conjunction with specific options and combinations of options, such as `-i`. `-c`, and `-r`, only dramatically improve the utility of the `grep` command. 
+All-in-all, the `grep` command is only so powerful on its own, but in conjunction with specific options and combinations of options, such as `-i`. `-c`, `-r`, and `-v`, only dramatically improve the utility of the `grep` command. 
 
 All options were found on [this](https://geekflare.com/grep-command-examples/#:~:text=16%20grep%20Command%20Examples%20to%20Help%20You%20in,...%208%20Limit%20grep%20Output%20...%20More%20items) website
